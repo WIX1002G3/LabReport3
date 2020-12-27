@@ -1,1 +1,42 @@
+import java.util.Random;
 
+public class Doll {
+    final String colours[] = {"Black", "Pink", "Brown"};
+    final String clothes[] = {"Shirt", "Dress", "Jacket"};
+    final String size[] = {"Short", "Long"};
+
+    //instance variables
+    private String name;
+    private String hairColour;
+    private String clothe;
+    private String hairLength;
+
+    //constructor to randomize the characteristics
+    public Doll(String name){
+        Random r = new Random();
+        this.name = name;
+        hairColour = colours[r.nextInt(colours.length)];
+        clothe = clothes[r.nextInt(clothes.length)];
+        hairLength = size[r.nextInt(size.length)];
+    }
+
+    //method to change the hair colour
+    public void changeHairColour(){
+        Random r = new Random();
+        hairColour = colours[r.nextInt(colours.length)];
+    }
+
+    //method to cut the hair
+    public void cutHair(){
+        if(hairLength.equals("Long"))
+            hairLength = "Short";
+    }
+
+    //diplay doll charcatertics
+    public void display(){
+        System.out.println("Name: " + name);
+        System.out.println("Hair Colour: " + hairColour);
+        System.out.println("Clothe: " + clothe);
+        System.out.println("Hair Length: " + hairLength + "\n");    
+    }
+}
