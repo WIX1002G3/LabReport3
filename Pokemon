@@ -1,0 +1,124 @@
+import java.util.Random;
+
+class Pokemon{
+
+int id,hit_point,attack,defense,speed,special,level;
+String pokemon_name;
+String element_type;
+  
+Pokemon(int id, String pokemon_name, String element_type){
+this.id=id;
+this.pokemon_name=pokemon_name;
+this.element_type=element_type;
+this.hit_point=0;
+this.attack=0;
+this.defense=0;
+this.speed=0;
+this.special=0;
+this.level=0;
+}
+  
+int getId(){
+return this.id;
+}
+  
+void setId(int id){
+this.id=id;
+}
+  
+String getPokemonName(){
+return this.pokemon_name;
+}
+  
+void setPokemonName(String pokemon_name){
+this.pokemon_name=pokemon_name;
+}
+  
+String getElementType(){
+return this.element_type;
+}
+  
+void setElementType(String element_type){
+this.element_type=element_type;
+}
+
+
+void setHitPoint(){
+Random rand = new Random();
+   int min=15,max=26,res;
+this.hit_point=rand.nextInt(max - min) + min;
+}
+  
+void setAttack(){
+Random rand = new Random();
+   int min=10,max=18,res;
+this.attack=rand.nextInt(max - min) + min;
+}
+  
+void setDefense(){
+Random rand = new Random();
+   int min=10,max=18,res;
+this.defense=rand.nextInt(max - min) + min;
+}
+  
+void setSpeed(){
+Random rand = new Random();
+   int min=5,max=16,res;
+this.speed=rand.nextInt(max - min) + min;
+}
+  
+void setSpecial(){
+Random rand = new Random();
+   int min=5,max=11,res;
+this.special=rand.nextInt(max - min) + min;
+}
+  
+void setLevel(){
+this.level=1;
+}
+  
+void levelUp(){
+this.level+=1;
+Random rand = new Random();
+   int min=2,max=6,res;
+this.hit_point+=rand.nextInt(max - min) + min;
+}
+  
+
+void displayStatus(){
+System.out.println("Pokemon ID: "+this.id);
+System.out.println("Pokemon Name: "+this.pokemon_name);
+System.out.println("Element Type: "+this.element_type);
+System.out.println("Hit Point: "+this.hit_point);
+System.out.println("Attack: "+this.attack);
+System.out.println("Defense: "+this.defense);
+System.out.println("Speed: "+this.speed);
+System.out.println("Special: "+this.special);
+System.out.println("Level: "+this.level);
+}
+}
+
+public class LabReport3Q1
+{
+
+   public static void main(String[] args) {
+
+   Pokemon obj=new Pokemon(101,"Pikachu","Electric");
+
+   obj.setHitPoint();
+   obj.setAttack();
+   obj.setDefense();
+   obj.setSpeed();
+   obj.setSpecial();
+   obj.setLevel();
+
+       System.out.println("Initial stat of the pokemon:\n");
+       obj.displayStatus();
+
+       System.out.println("\nPokemon stat after leveling up 3 times:\n");
+       obj.levelUp();
+obj.levelUp();
+obj.levelUp();
+obj.displayStatus();
+   }
+}
