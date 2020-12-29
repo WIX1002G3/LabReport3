@@ -1,0 +1,5 @@
+How to define a class with all the attributes (ID, Name, Element, HP, ATK, DEF, SPD, SPC and level)?
+
+How to generate random values for Hit Point, Attack, Defense, Speed, and special stat within given range using a method?
+
+How to update the stats of the pokemon by using another method when level is increased by 1, given the range of increment for each stats per level up?
