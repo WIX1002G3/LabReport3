@@ -3,7 +3,7 @@ import java.util.Random;
 public class Doll {
     final String colours[] = {"Black", "Pink", "Brown"};
     final String clothes[] = {"Shirt", "Dress", "Jacket"};
-    final String size[] = {"Short", "Long"};
+    final String length[] = {"Short", "Long"};
 
     //instance variables
     private String name;
@@ -17,7 +17,7 @@ public class Doll {
         this.name = name;
         hairColour = colours[r.nextInt(colours.length)];
         clothe = clothes[r.nextInt(clothes.length)];
-        hairLength = size[r.nextInt(size.length)];
+        hairLength = length[r.nextInt(length.length)];
     }
 
     //method to change the hair colour
