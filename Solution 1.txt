@@ -1,0 +1,7 @@
+Create instance variables for all the attributes with appropriate type, create constructor for all the instance variables and 
+create Accessor and Mutator (Getter and Setter) for all the attributes so that its value can be displayed or modified later.
+
+Generate random value for Hit Point (15-25), ATK (10-17), DEF (10-17), SPD (5-15) and SPC (5-10) by using Random() in a new method.
+
+Create another new method to update the attributes when level increases by 1 by using accessor and mutator defined in the class,
+use Random() again to random generate a number within given increment range. 
