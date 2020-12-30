@@ -1,0 +1,4 @@
+First, we create a class called Doll and assign characteristics as name, hairColor, clothes, hairLength to the class as instance variables. 
+Next, we need to initialize values to hair color, clothes, hair length and randomly assign. The doll can have 3 different hair colors(black, pink, brown), 3 different clothes(shirt, dress, jacket), and 2 different hair lengths(long and short).
+Next step is to create methods to change the doll's haircolor, and to cut its hair. 
+Finally, we can create an another method for displaying all the characteristics, and test out results in the main method by calling methods for displaying, changing hair color, and cutting the hair.
