@@ -1,0 +1,3 @@
+The first question to think about is how to generate a new class and assign different character attributes to it. 
+Next, how to randomize those characteristics and how to create a method to change the values whenever the method is called. 
+Finally, we should be able to display or print out those initial characterists along with the new changed attributes. 
