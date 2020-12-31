@@ -1,14 +1,9 @@
 public class DollTester {
      public static void main(String args[]){
-        //generate a doll
         Doll a = new Doll("Barbie");
-        //display charactericts
         a.display();
-        //cut the hair
         a.cutHair();
-        //change hair colour
         a.changeHairColour();
-        //display new characteristics
         a.display();
     }
 }         
